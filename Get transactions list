@@ -1,0 +1,1415 @@
+// Request
+
+curl --location 'https://api-uat.kushkipagos.com/analytics/v1/transactions-list?from=2025-08-27T13%3A00%3A00&to=2025-08-27T13%3A20%3A00' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--header 'Private-Merchant-Id: faa858fce2d94e3f8a6e33cddf55e8f2' \
+--data ''
+
+// Response
+
+{
+    "total": 14,
+    "data": [
+        {
+            "amount": {
+                "subtotalIva0": 16.98,
+                "iva": 0,
+                "subtotalIva": 0,
+                "extraTaxes": {
+                    "agenciaDeViaje": 0,
+                    "iac": 0,
+                    "tasaAeroportuaria": 0
+                },
+                "currency": "COP",
+                "ice": 0
+            },
+            "approved_transaction_amount": 0,
+            "bin_card": "545195",
+            "card_holder_name": "John Doe",
+            "card_type": "Credit",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "ABCD123456EF",
+                "document_type": "CURP",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+523988734644"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:06:35.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "Banco de la Produccion S.A. (PRODUBANCO)",
+            "iva_value": 0,
+            "last_four_digits": "5480",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "metadata": {
+                "key1": "value1",
+                "key2": "value2",
+                "key0": "value0"
+            },
+            "payment_brand": "Mastercard",
+            "plcc": false,
+            "processor": {
+                "code": "K006",
+                "message": "Transacción declinada."
+            },
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 16.98,
+            "response_code": "K001",
+            "response_text": "Cuerpo de la peticion invalido.",
+            "send_cvv": true,
+            "subtotal_iva": 0,
+            "subtotal_iva0": 16.98,
+            "sync_mode": "online",
+            "taxes": {
+                "agenciaDeViaje": 0,
+                "iac": 0,
+                "tasaAeroportuaria": 0
+            },
+            "transaction_id": "1756317995316696431",
+            "transaction_reference": "bb14da57-caf9-4c8c-a6ba-2352e9a6ef1f",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "transaction_card_id": "6420c5bd-5a3f-45d2-8ac4-88de7b09958d",
+            "card_country_code": "EC",
+            "card_country": "Ecuador",
+            "original_bin": "54519515",
+            "processor_code": "K001",
+            "string_taxes": "{\"agenciaDeViaje\":0,\"iac\":0,\"tasaAeroportuaria\":0}",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "545195XXXXXX5480",
+            "security": {
+                "3dsMpi": "Merchant",
+                "ip": "54.86.50.139",
+                "reason_code": ""
+            },
+            "string_metadata": "{\"key1\":\"value1\",\"key2\":\"value2\",\"key0\":\"value0\"}",
+            "order_details": {
+                "billing_details": {
+                    "city": "Monterrey",
+                    "country": "Mexico",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "shipping_details": {
+                    "city": "Monterrey",
+                    "country": "Mexico",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "site_domain": "example.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "id": "198952AB",
+                        "price": 15000,
+                        "quantity": 1,
+                        "sku": "10101042",
+                        "title": "eBook Digital Services"
+                    }
+                ]
+            }
+        },
+        {
+            "amount": {
+                "subtotalIva0": 5000,
+                "iva": 0,
+                "subtotalIva": 0,
+                "extraTaxes": {
+                    "agenciaDeViaje": 0,
+                    "iac": 0,
+                    "tasaAeroportuaria": 0
+                },
+                "currency": "COP",
+                "ice": 0
+            },
+            "approved_transaction_amount": 0,
+            "bin_card": "545195",
+            "card_holder_name": "John Doe",
+            "card_type": "Credit",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "ABCD123456EF",
+                "document_type": "CURP",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+523988734644"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:06:47.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "Banco de la Produccion S.A. (PRODUBANCO)",
+            "iva_value": 0,
+            "last_four_digits": "5480",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "metadata": {
+                "key1": "value1",
+                "key2": "value2",
+                "key0": "value0"
+            },
+            "payment_brand": "Mastercard",
+            "plcc": false,
+            "processor": {
+                "code": "566",
+                "message": "El token es invalido , o ya fue usado en otra transaccion."
+            },
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 5000,
+            "response_code": "577",
+            "response_text": "El token de la transaccion no es valido",
+            "send_cvv": true,
+            "subtotal_iva": 0,
+            "subtotal_iva0": 5000,
+            "sync_mode": "online",
+            "taxes": {
+                "agenciaDeViaje": 0,
+                "iac": 0,
+                "tasaAeroportuaria": 0
+            },
+            "transaction_id": "1756318007763187126",
+            "transaction_reference": "bb14da57-caf9-4c8c-a6ba-2352e9a6ef1f",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "transaction_card_id": "6420c5bd-5a3f-45d2-8ac4-88de7b09958d",
+            "card_country_code": "EC",
+            "card_country": "Ecuador",
+            "original_bin": "54519515",
+            "processor_code": "577",
+            "string_taxes": "{\"agenciaDeViaje\":0,\"iac\":0,\"tasaAeroportuaria\":0}",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "545195XXXXXX5480",
+            "security": {
+                "3dsMpi": "Merchant",
+                "ip": "54.86.50.139",
+                "reason_code": ""
+            },
+            "string_metadata": "{\"key1\":\"value1\",\"key2\":\"value2\",\"key0\":\"value0\"}",
+            "order_details": {
+                "billing_details": {
+                    "city": "Monterrey",
+                    "country": "Mexico",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "shipping_details": {
+                    "city": "Monterrey",
+                    "country": "Mexico",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "site_domain": "example.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "id": "198952AB",
+                        "price": 15000,
+                        "quantity": 1,
+                        "sku": "10101042",
+                        "title": "eBook Digital Services"
+                    }
+                ]
+            }
+        },
+        {
+            "amount": {
+                "subtotalIva0": 5000,
+                "iva": 0,
+                "subtotalIva": 0,
+                "extraTaxes": {
+                    "agenciaDeViaje": 0,
+                    "iac": 0,
+                    "tasaAeroportuaria": 0
+                },
+                "currency": "COP",
+                "ice": 0
+            },
+            "approved_transaction_amount": 0,
+            "bin_card": "545195",
+            "card_holder_name": "John Doe",
+            "card_type": "Credit",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "ABCD123456EF",
+                "document_type": "CURP",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+523988734644"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:08:00.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "Banco de la Produccion S.A. (PRODUBANCO)",
+            "iva_value": 0,
+            "last_four_digits": "5480",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "metadata": {
+                "key1": "value1",
+                "key2": "value2",
+                "key0": "value0"
+            },
+            "payment_brand": "Mastercard",
+            "plcc": false,
+            "processor": {
+                "code": "566",
+                "message": "El token es invalido , o ya fue usado en otra transaccion."
+            },
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 5000,
+            "response_code": "577",
+            "response_text": "El token de la transaccion no es valido",
+            "send_cvv": true,
+            "subtotal_iva": 0,
+            "subtotal_iva0": 5000,
+            "sync_mode": "online",
+            "taxes": {
+                "agenciaDeViaje": 0,
+                "iac": 0,
+                "tasaAeroportuaria": 0
+            },
+            "transaction_id": "1756318080120400410",
+            "transaction_reference": "bb14da57-caf9-4c8c-a6ba-2352e9a6ef1f",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "transaction_card_id": "6420c5bd-5a3f-45d2-8ac4-88de7b09958d",
+            "card_country_code": "EC",
+            "card_country": "Ecuador",
+            "original_bin": "54519515",
+            "processor_code": "577",
+            "string_taxes": "{\"agenciaDeViaje\":0,\"iac\":0,\"tasaAeroportuaria\":0}",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "545195XXXXXX5480",
+            "security": {
+                "3dsMpi": "Merchant",
+                "ip": "54.86.50.139",
+                "reason_code": ""
+            },
+            "string_metadata": "{\"key1\":\"value1\",\"key2\":\"value2\",\"key0\":\"value0\"}",
+            "order_details": {
+                "billing_details": {
+                    "city": "Monterrey",
+                    "country": "Mexico",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "shipping_details": {
+                    "city": "Monterrey",
+                    "country": "Colombia",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "site_domain": "example.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "id": "198952AB",
+                        "price": 15000,
+                        "quantity": 1,
+                        "sku": "10101042",
+                        "title": "eBook Digital Services"
+                    }
+                ]
+            }
+        },
+        {
+            "amount": {
+                "subtotalIva0": 5000,
+                "iva": 0,
+                "subtotalIva": 0,
+                "extraTaxes": {
+                    "agenciaDeViaje": 0,
+                    "iac": 0,
+                    "tasaAeroportuaria": 0
+                },
+                "currency": "COP",
+                "ice": 0
+            },
+            "approved_transaction_amount": 0,
+            "bin_card": "545195",
+            "card_holder_name": "John Doe",
+            "card_type": "Credit",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "ABCD123456EF",
+                "document_type": "CURP",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+523988734644"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:08:47.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "Banco de la Produccion S.A. (PRODUBANCO)",
+            "iva_value": 0,
+            "last_four_digits": "5480",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "metadata": {
+                "key1": "value1",
+                "key2": "value2",
+                "key0": "value0"
+            },
+            "payment_brand": "Mastercard",
+            "plcc": false,
+            "processor": {
+                "code": "566",
+                "message": "El token es invalido , o ya fue usado en otra transaccion."
+            },
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 5000,
+            "response_code": "577",
+            "response_text": "El token de la transaccion no es valido",
+            "send_cvv": true,
+            "subtotal_iva": 0,
+            "subtotal_iva0": 5000,
+            "sync_mode": "online",
+            "taxes": {
+                "agenciaDeViaje": 0,
+                "iac": 0,
+                "tasaAeroportuaria": 0
+            },
+            "transaction_id": "1756318127401516501",
+            "transaction_reference": "bb14da57-caf9-4c8c-a6ba-2352e9a6ef1f",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "transaction_card_id": "6420c5bd-5a3f-45d2-8ac4-88de7b09958d",
+            "card_country_code": "EC",
+            "card_country": "Ecuador",
+            "original_bin": "54519515",
+            "processor_code": "577",
+            "string_taxes": "{\"agenciaDeViaje\":0,\"iac\":0,\"tasaAeroportuaria\":0}",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "545195XXXXXX5480",
+            "security": {
+                "3dsMpi": "Merchant",
+                "ip": "54.86.50.139",
+                "reason_code": ""
+            },
+            "string_metadata": "{\"key1\":\"value1\",\"key2\":\"value2\",\"key0\":\"value0\"}",
+            "order_details": {
+                "billing_details": {
+                    "city": "Monterrey",
+                    "country": "Mexico",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "shipping_details": {
+                    "city": "Monterrey",
+                    "country": "Colombia",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "site_domain": "example.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "id": "198952AB",
+                        "price": 15000,
+                        "quantity": 1,
+                        "sku": "10101042",
+                        "title": "eBook Digital Services"
+                    }
+                ]
+            }
+        },
+        {
+            "amount": {
+                "subtotalIva0": 5000,
+                "iva": 0,
+                "subtotalIva": 0,
+                "extraTaxes": {
+                    "agenciaDeViaje": 0,
+                    "iac": 0,
+                    "tasaAeroportuaria": 0
+                },
+                "currency": "COP",
+                "ice": 0
+            },
+            "approved_transaction_amount": 0,
+            "bin_card": "545195",
+            "card_holder_name": "John Doe",
+            "card_type": "Credit",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "ABCD123456EF",
+                "document_type": "CURP",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+523988734644"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:09:30.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "Banco de la Produccion S.A. (PRODUBANCO)",
+            "iva_value": 0,
+            "last_four_digits": "5480",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "metadata": {
+                "key1": "value1",
+                "key2": "value2",
+                "key0": "value0"
+            },
+            "payment_brand": "Mastercard",
+            "plcc": false,
+            "processor": {
+                "code": "566",
+                "message": "El token es invalido , o ya fue usado en otra transaccion."
+            },
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 5000,
+            "response_code": "577",
+            "response_text": "El token de la transaccion no es valido",
+            "send_cvv": true,
+            "subtotal_iva": 0,
+            "subtotal_iva0": 5000,
+            "sync_mode": "online",
+            "taxes": {
+                "agenciaDeViaje": 0,
+                "iac": 0,
+                "tasaAeroportuaria": 0
+            },
+            "transaction_id": "1756318170175434908",
+            "transaction_reference": "bb14da57-caf9-4c8c-a6ba-2352e9a6ef1f",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "transaction_card_id": "6420c5bd-5a3f-45d2-8ac4-88de7b09958d",
+            "card_country_code": "EC",
+            "card_country": "Ecuador",
+            "original_bin": "54519515",
+            "processor_code": "577",
+            "string_taxes": "{\"agenciaDeViaje\":0,\"iac\":0,\"tasaAeroportuaria\":0}",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "545195XXXXXX5480",
+            "security": {
+                "3dsMpi": "Merchant",
+                "ip": "54.86.50.139",
+                "reason_code": ""
+            },
+            "string_metadata": "{\"key1\":\"value1\",\"key2\":\"value2\",\"key0\":\"value0\"}",
+            "order_details": {
+                "billing_details": {
+                    "city": "Monterrey",
+                    "country": "Mexico",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "shipping_details": {
+                    "city": "Monterrey",
+                    "country": "Colombia",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "site_domain": "example.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "id": "198952AB",
+                        "price": 15000,
+                        "quantity": 1,
+                        "sku": "10101042",
+                        "title": "eBook Digital Services"
+                    }
+                ]
+            }
+        },
+        {
+            "amount": {
+                "subtotalIva0": 5000,
+                "iva": 0,
+                "subtotalIva": 0,
+                "extraTaxes": {
+                    "agenciaDeViaje": 0,
+                    "iac": 0,
+                    "tasaAeroportuaria": 0
+                },
+                "currency": "COP",
+                "ice": 0
+            },
+            "approved_transaction_amount": 0,
+            "bin_card": "545195",
+            "card_holder_name": "John Doe",
+            "card_type": "Credit",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "ABCD123456EF",
+                "document_type": "CURP",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+523988734644"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:10:07.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "Banco de la Produccion S.A. (PRODUBANCO)",
+            "iva_value": 0,
+            "last_four_digits": "5480",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "metadata": {
+                "key1": "value1",
+                "key2": "value2",
+                "key0": "value0"
+            },
+            "payment_brand": "Mastercard",
+            "plcc": false,
+            "processor": {
+                "code": "K006",
+                "message": "Transacción declinada."
+            },
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 5000,
+            "response_code": "K001",
+            "response_text": "Cuerpo de la peticion invalido.",
+            "send_cvv": true,
+            "subtotal_iva": 0,
+            "subtotal_iva0": 5000,
+            "sync_mode": "online",
+            "taxes": {
+                "agenciaDeViaje": 0,
+                "iac": 0,
+                "tasaAeroportuaria": 0
+            },
+            "transaction_id": "1756318207910602859",
+            "transaction_reference": "78088870-14a7-4ba4-a810-76eecac1e708",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "transaction_card_id": "6420c5bd-5a3f-45d2-8ac4-88de7b09958d",
+            "card_country_code": "EC",
+            "card_country": "Ecuador",
+            "original_bin": "54519515",
+            "processor_code": "K001",
+            "string_taxes": "{\"agenciaDeViaje\":0,\"iac\":0,\"tasaAeroportuaria\":0}",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "545195XXXXXX5480",
+            "security": {
+                "3dsMpi": "Merchant",
+                "ip": "54.86.50.139",
+                "reason_code": ""
+            },
+            "string_metadata": "{\"key1\":\"value1\",\"key2\":\"value2\",\"key0\":\"value0\"}",
+            "order_details": {
+                "billing_details": {
+                    "city": "Monterrey",
+                    "country": "Mexico",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "shipping_details": {
+                    "city": "Monterrey",
+                    "country": "Colombia",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "site_domain": "example.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "id": "198952AB",
+                        "price": 15000,
+                        "quantity": 1,
+                        "sku": "10101042",
+                        "title": "eBook Digital Services"
+                    }
+                ]
+            }
+        },
+        {
+            "amount": {
+                "subtotalIva0": 16.98,
+                "iva": 0,
+                "subtotalIva": 0,
+                "extraTaxes": {
+                    "agenciaDeViaje": 0,
+                    "iac": 0,
+                    "tasaAeroportuaria": 0
+                },
+                "currency": "COP",
+                "ice": 0
+            },
+            "approved_transaction_amount": 0,
+            "bin_card": "545195",
+            "card_holder_name": "John Doe",
+            "card_type": "Credit",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "ABCD123456EF",
+                "document_type": "CURP",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+523988734644"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:13:44.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "Banco de la Produccion S.A. (PRODUBANCO)",
+            "iva_value": 0,
+            "last_four_digits": "5480",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "metadata": {
+                "key1": "value1",
+                "key2": "value2",
+                "key0": "value0"
+            },
+            "payment_brand": "Mastercard",
+            "plcc": false,
+            "processor": {
+                "code": "566",
+                "message": "El token es invalido , o ya fue usado en otra transaccion."
+            },
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 16.98,
+            "response_code": "577",
+            "response_text": "El token de la transaccion no es valido",
+            "send_cvv": true,
+            "subtotal_iva": 0,
+            "subtotal_iva0": 16.98,
+            "sync_mode": "online",
+            "taxes": {
+                "agenciaDeViaje": 0,
+                "iac": 0,
+                "tasaAeroportuaria": 0
+            },
+            "transaction_id": "1756318424583316096",
+            "transaction_reference": "78088870-14a7-4ba4-a810-76eecac1e708",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "transaction_card_id": "6420c5bd-5a3f-45d2-8ac4-88de7b09958d",
+            "card_country_code": "EC",
+            "card_country": "Ecuador",
+            "original_bin": "54519515",
+            "processor_code": "577",
+            "string_taxes": "{\"agenciaDeViaje\":0,\"iac\":0,\"tasaAeroportuaria\":0}",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "545195XXXXXX5480",
+            "security": {
+                "3dsMpi": "Merchant",
+                "ip": "54.86.50.139",
+                "reason_code": ""
+            },
+            "string_metadata": "{\"key1\":\"value1\",\"key2\":\"value2\",\"key0\":\"value0\"}",
+            "order_details": {
+                "billing_details": {
+                    "city": "Monterrey",
+                    "country": "Mexico",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "shipping_details": {
+                    "city": "Monterrey",
+                    "country": "Colombia",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "site_domain": "example.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "id": "198952AB",
+                        "price": 15000,
+                        "quantity": 1,
+                        "sku": "10101042",
+                        "title": "eBook Digital Services"
+                    }
+                ]
+            }
+        },
+        {
+            "amount": {
+                "subtotalIva0": 16.98,
+                "iva": 0,
+                "subtotalIva": 0,
+                "extraTaxes": {
+                    "agenciaDeViaje": 0,
+                    "iac": 0,
+                    "tasaAeroportuaria": 0
+                },
+                "currency": "COP",
+                "ice": 0
+            },
+            "approved_transaction_amount": 0,
+            "bin_card": "545195",
+            "card_holder_name": "John Doe",
+            "card_type": "Credit",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "ABCD123456EF",
+                "document_type": "CURP",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+523988734644"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:14:09.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "Banco de la Produccion S.A. (PRODUBANCO)",
+            "iva_value": 0,
+            "last_four_digits": "5480",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "metadata": {
+                "key1": "value1",
+                "key2": "value2",
+                "key0": "value0"
+            },
+            "payment_brand": "Mastercard",
+            "plcc": false,
+            "processor": {
+                "code": "K006",
+                "message": "Transacción declinada."
+            },
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 16.98,
+            "response_code": "K001",
+            "response_text": "Cuerpo de la peticion invalido.",
+            "send_cvv": true,
+            "subtotal_iva": 0,
+            "subtotal_iva0": 16.98,
+            "sync_mode": "online",
+            "taxes": {
+                "agenciaDeViaje": 0,
+                "iac": 0,
+                "tasaAeroportuaria": 0
+            },
+            "transaction_id": "1756318449356814392",
+            "transaction_reference": "a4a488a0-14a4-489f-b256-196d4e0283cb",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "transaction_card_id": "6420c5bd-5a3f-45d2-8ac4-88de7b09958d",
+            "card_country_code": "EC",
+            "card_country": "Ecuador",
+            "original_bin": "54519515",
+            "processor_code": "K001",
+            "string_taxes": "{\"agenciaDeViaje\":0,\"iac\":0,\"tasaAeroportuaria\":0}",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "545195XXXXXX5480",
+            "security": {
+                "3dsMpi": "Merchant",
+                "ip": "54.86.50.139",
+                "reason_code": ""
+            },
+            "string_metadata": "{\"key1\":\"value1\",\"key2\":\"value2\",\"key0\":\"value0\"}",
+            "order_details": {
+                "billing_details": {
+                    "city": "Monterrey",
+                    "country": "Mexico",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "shipping_details": {
+                    "city": "Monterrey",
+                    "country": "Colombia",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "site_domain": "example.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "id": "198952AB",
+                        "price": 15000,
+                        "quantity": 1,
+                        "sku": "10101042",
+                        "title": "eBook Digital Services"
+                    }
+                ]
+            }
+        },
+        {
+            "amount": {
+                "subtotalIva0": 1698,
+                "iva": 0,
+                "subtotalIva": 0,
+                "extraTaxes": {
+                    "agenciaDeViaje": 0,
+                    "iac": 0,
+                    "tasaAeroportuaria": 0
+                },
+                "currency": "COP",
+                "ice": 0
+            },
+            "approved_transaction_amount": 0,
+            "bin_card": "545195",
+            "card_holder_name": "John Doe",
+            "card_type": "Credit",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "ABCD123456EF",
+                "document_type": "CURP",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+523988734644"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:15:57.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "Banco de la Produccion S.A. (PRODUBANCO)",
+            "iva_value": 0,
+            "last_four_digits": "5480",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "metadata": {
+                "key1": "value1",
+                "key2": "value2",
+                "key0": "value0"
+            },
+            "payment_brand": "Mastercard",
+            "plcc": false,
+            "processor": {
+                "code": "566",
+                "message": "El token es invalido , o ya fue usado en otra transaccion."
+            },
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 1698,
+            "response_code": "577",
+            "response_text": "El token de la transaccion no es valido",
+            "send_cvv": true,
+            "subtotal_iva": 0,
+            "subtotal_iva0": 1698,
+            "sync_mode": "online",
+            "taxes": {
+                "agenciaDeViaje": 0,
+                "iac": 0,
+                "tasaAeroportuaria": 0
+            },
+            "transaction_id": "1756318557296140971",
+            "transaction_reference": "a4a488a0-14a4-489f-b256-196d4e0283cb",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "transaction_card_id": "6420c5bd-5a3f-45d2-8ac4-88de7b09958d",
+            "card_country_code": "EC",
+            "card_country": "Ecuador",
+            "original_bin": "54519515",
+            "processor_code": "577",
+            "string_taxes": "{\"agenciaDeViaje\":0,\"iac\":0,\"tasaAeroportuaria\":0}",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "545195XXXXXX5480",
+            "security": {
+                "3dsMpi": "Merchant",
+                "ip": "54.86.50.139",
+                "reason_code": ""
+            },
+            "string_metadata": "{\"key1\":\"value1\",\"key2\":\"value2\",\"key0\":\"value0\"}",
+            "order_details": {
+                "billing_details": {
+                    "city": "Monterrey",
+                    "country": "Mexico",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "shipping_details": {
+                    "city": "Monterrey",
+                    "country": "Colombia",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "site_domain": "example.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "id": "198952AB",
+                        "price": 15000,
+                        "quantity": 1,
+                        "sku": "10101042",
+                        "title": "eBook Digital Services"
+                    }
+                ]
+            }
+        },
+        {
+            "amount": {
+                "subtotalIva0": 1698,
+                "iva": 0,
+                "subtotalIva": 0,
+                "extraTaxes": {
+                    "agenciaDeViaje": 0,
+                    "iac": 0,
+                    "tasaAeroportuaria": 0
+                },
+                "currency": "COP",
+                "ice": 0
+            },
+            "approved_transaction_amount": 0,
+            "bin_card": "545195",
+            "card_holder_name": "John Doe",
+            "card_type": "Credit",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "ABCD123456EF",
+                "document_type": "CURP",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+523988734644"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:16:14.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "ice_value": 0,
+            "issuing_bank": "Banco de la Produccion S.A. (PRODUBANCO)",
+            "iva_value": 0,
+            "last_four_digits": "5480",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "metadata": {
+                "key1": "value1",
+                "key2": "value2",
+                "key0": "value0"
+            },
+            "payment_brand": "Mastercard",
+            "plcc": false,
+            "processor": {
+                "code": "K006",
+                "message": "Transacción declinada."
+            },
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 1698,
+            "response_code": "K001",
+            "response_text": "Cuerpo de la peticion invalido.",
+            "send_cvv": true,
+            "subtotal_iva": 0,
+            "subtotal_iva0": 1698,
+            "sync_mode": "online",
+            "taxes": {
+                "agenciaDeViaje": 0,
+                "iac": 0,
+                "tasaAeroportuaria": 0
+            },
+            "transaction_id": "1756318574524960815",
+            "transaction_reference": "a48148cf-8319-4dd8-8617-259da38bbac6",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "transaction_card_id": "6420c5bd-5a3f-45d2-8ac4-88de7b09958d",
+            "card_country_code": "EC",
+            "card_country": "Ecuador",
+            "original_bin": "54519515",
+            "processor_code": "K001",
+            "string_taxes": "{\"agenciaDeViaje\":0,\"iac\":0,\"tasaAeroportuaria\":0}",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "545195XXXXXX5480",
+            "security": {
+                "3dsMpi": "Merchant",
+                "ip": "54.86.50.139",
+                "reason_code": ""
+            },
+            "string_metadata": "{\"key1\":\"value1\",\"key2\":\"value2\",\"key0\":\"value0\"}",
+            "order_details": {
+                "billing_details": {
+                    "city": "Monterrey",
+                    "country": "Mexico",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "shipping_details": {
+                    "city": "Monterrey",
+                    "country": "Colombia",
+                    "name": "John Doe",
+                    "phone": "+523988734644",
+                    "region": "Nuevo León"
+                },
+                "site_domain": "example.com"
+            },
+            "product_details": {
+                "product": [
+                    {
+                        "id": "198952AB",
+                        "price": 15000,
+                        "quantity": 1,
+                        "sku": "10101042",
+                        "title": "eBook Digital Services"
+                    }
+                ]
+            }
+        },
+        {
+            "acquirer_bank": "IRIS CF",
+            "amount": {
+                "subtotalIva0": 1698,
+                "iva": 0,
+                "subtotalIva": 0,
+                "currency": "COP"
+            },
+            "approved_transaction_amount": 0,
+            "card_holder_name": "",
+            "card_type": "",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "123456789",
+                "document_type": "CC",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+573001234567"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:17:41.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "iva_value": 0,
+            "mcc_code": "8999",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "payment_brand": "",
+            "plcc": false,
+            "processor": {
+                "message": "El token de la transacción no es válido"
+            },
+            "processor_id": "6000000000175622459156007699",
+            "processor_name": "Kushki Acquirer Processor",
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 1698,
+            "response_code": "577",
+            "response_text": "El token de la transaccion no es valido",
+            "subtotal_iva": 0,
+            "subtotal_iva0": 1698,
+            "sync_mode": "online",
+            "transaction_id": "1756318661799351984",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "processor_code": "577",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "XXXXXXXXXXXXXXXX",
+            "security": {
+                "reason_code": ""
+            },
+            "order_details": {
+                "site_domain": "example.com"
+            }
+        },
+        {
+            "amount": {
+                "subtotalIva0": 1698,
+                "iva": 0,
+                "subtotalIva": 0,
+                "currency": "COP"
+            },
+            "approved_transaction_amount": 0,
+            "bin_card": "545195",
+            "card_holder_name": "John Doe",
+            "card_type": "Credit",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "123456789",
+                "document_type": "CC",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+573001234567"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:17:54.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "issuing_bank": "Banco de la Produccion S.A. (PRODUBANCO)",
+            "iva_value": 0,
+            "last_four_digits": "5480",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "payment_brand": "Mastercard",
+            "plcc": false,
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 1698,
+            "response_code": "K220",
+            "response_text": "Monto de la transaccion es diferente al monto de la venta inicial",
+            "send_cvv": true,
+            "subtotal_iva": 0,
+            "subtotal_iva0": 1698,
+            "sync_mode": "online",
+            "transaction_id": "1756318674922534828",
+            "transaction_reference": "34218608-471a-4e77-80e2-e04335c940c6",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "transaction_card_id": "6420c5bd-5a3f-45d2-8ac4-88de7b09958d",
+            "card_country_code": "EC",
+            "card_country": "Ecuador",
+            "original_bin": "54519515",
+            "processor_code": "",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "545195XXXXXX5480",
+            "security": {
+                "ip": "54.86.50.139",
+                "reason_code": ""
+            },
+            "order_details": {
+                "site_domain": "example.com"
+            }
+        },
+        {
+            "amount": {
+                "subtotalIva0": 16.98,
+                "iva": 0,
+                "subtotalIva": 0,
+                "currency": "COP"
+            },
+            "approved_transaction_amount": 0,
+            "bin_card": "545195",
+            "card_holder_name": "John Doe",
+            "card_type": "Credit",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "123456789",
+                "document_type": "CC",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+573001234567"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:18:06.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "issuing_bank": "Banco de la Produccion S.A. (PRODUBANCO)",
+            "iva_value": 0,
+            "last_four_digits": "5480",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "payment_brand": "Mastercard",
+            "plcc": false,
+            "processor": {
+                "code": "566",
+                "message": "El token es invalido , o ya fue usado en otra transaccion."
+            },
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 16.98,
+            "response_code": "577",
+            "response_text": "El token de la transaccion no es valido",
+            "send_cvv": true,
+            "subtotal_iva": 0,
+            "subtotal_iva0": 16.98,
+            "sync_mode": "online",
+            "transaction_id": "1756318686399597513",
+            "transaction_reference": "34218608-471a-4e77-80e2-e04335c940c6",
+            "transaction_status": "DECLINED",
+            "transaction_type": "SALE",
+            "transaction_card_id": "6420c5bd-5a3f-45d2-8ac4-88de7b09958d",
+            "card_country_code": "EC",
+            "card_country": "Ecuador",
+            "original_bin": "54519515",
+            "processor_code": "577",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "545195XXXXXX5480",
+            "security": {
+                "ip": "54.86.50.139",
+                "reason_code": ""
+            },
+            "order_details": {
+                "site_domain": "example.com"
+            }
+        },
+        {
+            "acquirer_bank": "IRIS CF",
+            "amount": {
+                "subtotalIva0": 1000,
+                "iva": 0,
+                "subtotalIva": 0,
+                "currency": "COP"
+            },
+            "approval_code": "000000",
+            "approved_transaction_amount": 1000,
+            "bin_card": "545195",
+            "card_holder_name": "John Doe",
+            "card_type": "Credit",
+            "constitutional_country": "Colombia",
+            "contact_details": {
+                "document_number": "123456789",
+                "document_type": "CC",
+                "email": "user@example.com",
+                "first_name": "John",
+                "last_name": "Doe",
+                "phone_number": "+573001234567"
+            },
+            "country": "Colombia",
+            "created": "2025-08-27T18:18:30.000Z",
+            "credential_alias": "GFLOPEZ Branch Colombia",
+            "credential_id": "2703996b20ac452da6c40d02ca476636",
+            "currency_code": "COP",
+            "foreign_card": true,
+            "issuing_bank": "Banco de la Produccion S.A. (PRODUBANCO)",
+            "iva_value": 0,
+            "last_four_digits": "5480",
+            "mcc_code": "8999",
+            "merchant_id": "20000000107108323000",
+            "merchant_name": "GFLOPEZ Branch Colombia",
+            "payment_brand": "Mastercard",
+            "plcc": false,
+            "processor": {
+                "code": "000",
+                "message": "Transacción aprobada"
+            },
+            "processor_bank_name": "0032~BANCO INTERNACIONAL",
+            "processor_id": "6000000000175622459156007699",
+            "processor_name": "Kushki Acquirer Processor",
+            "processor_type": "aggregator_formal",
+            "public_credential_id": "ef6ad643669a4ad5880cbcd801ef73a0",
+            "request_amount": 1000,
+            "response_code": "000",
+            "response_text": "Transaccion aprobada",
+            "send_cvv": true,
+            "subtotal_iva": 0,
+            "subtotal_iva0": 1000,
+            "sync_mode": "online",
+            "ticket_number": "259143360666104576",
+            "transaction_id": "397814012893812624",
+            "transaction_reference": "b060e891-9845-45e9-9e2a-58d27996d510",
+            "transaction_status": "APPROVAL",
+            "transaction_type": "SALE",
+            "transaction_card_id": "6420c5bd-5a3f-45d2-8ac4-88de7b09958d",
+            "card_country_code": "EC",
+            "card_country": "Ecuador",
+            "original_bin": "54519515",
+            "processor_code": "",
+            "payment_method": "card",
+            "social_reason": "",
+            "merchant_category": "",
+            "tax_id": "",
+            "masked_credit_card": "545195XXXXXX5480",
+            "security": {
+                "ip": "54.86.50.139",
+                "reason_code": "",
+                "user_agent": "PostmanRuntime/7.45.0",
+                "whitelist": false
+            },
+            "order_details": {
+                "site_domain": "example.com"
+            }
+        }
+    ]
+}
