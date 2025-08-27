@@ -1,0 +1,33 @@
+// Request
+
+curl --location 'https://api-uat.kushkipagos.com/card/v1/charges' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--header 'Private-Merchant-Id: faa858fce2d94e3f8a6e33cddf55e8f2' \
+--data-raw '{
+  "token": "55da49d97abe4502852efac314f691bd",
+  "amount": {
+    "currency": "COP",
+    "subtotalIva": 0,
+    "subtotalIva0": 1000,
+    "iva": 0
+  },
+  "contactDetails": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "user@example.com",
+    "documentType": "CC",
+    "documentNumber": "123456789",
+    "phoneNumber": "+573001234567"
+  },
+  "orderDetails": {
+    "siteDomain": "example.com"
+  }
+}'
+
+// Response
+
+{
+    "ticketNumber": "259143360666104576",
+    "transactionReference": "b060e891-9845-45e9-9e2a-58d27996d510"
+}
