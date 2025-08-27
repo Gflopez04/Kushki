@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "994c7393-f86b-41ec-8d29-c44173672a79",
+		"name": "Kushki_Collection",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47962725",
+		"_collection_link": "https://gabriel-s-team-28.postman.co/workspace/300e7f02-05b7-470e-8e2b-e8320788425b/collection/47962725-994c7393-f86b-41ec-8d29-c44173672a79?action=share&source=collection_link&creator=47962725"
+	},
+	"item": [
+		{
+			"name": "Request a card token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Public-Merchant-Id",
+						"value": "ef6ad643669a4ad5880cbcd801ef73a0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"card\": {\n    \"name\": \"John Doe\",\n    \"number\": \"5451951574925480\",\n    \"expiryMonth\": \"08\",\n    \"expiryYear\": \"28\",\n    \"cvv\": \"121\"\n  },\n  \"totalAmount\": 1000,\n  \"currency\": \"COP\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-uat.kushkipagos.com/card/v1/tokens",
+					"protocol": "https",
+					"host": [
+						"api-uat",
+						"kushkipagos",
+						"com"
+					],
+					"path": [
+						"card",
+						"v1",
+						"tokens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make a charge",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Private-Merchant-Id",
+						"value": "faa858fce2d94e3f8a6e33cddf55e8f2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\": \"55da49d97abe4502852efac314f691bd\",\n  \"amount\": {\n    \"currency\": \"COP\",\n    \"subtotalIva\": 0,\n    \"subtotalIva0\": 1000,\n    \"iva\": 0\n  },\n  \"contactDetails\": {\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"email\": \"user@example.com\",\n    \"documentType\": \"CC\",\n    \"documentNumber\": \"123456789\",\n    \"phoneNumber\": \"+573001234567\"\n  },\n  \"orderDetails\": {\n    \"siteDomain\": \"example.com\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-uat.kushkipagos.com/card/v1/charges",
+					"protocol": "https",
+					"host": [
+						"api-uat",
+						"kushkipagos",
+						"com"
+					],
+					"path": [
+						"card",
+						"v1",
+						"charges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Void a transaction",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Private-Merchant-Id",
+						"value": "faa858fce2d94e3f8a6e33cddf55e8f2"
+					}
+				],
+				"url": {
+					"raw": "https://api-uat.kushkipagos.com/v1/charges/259143360666104576",
+					"protocol": "https",
+					"host": [
+						"api-uat",
+						"kushkipagos",
+						"com"
+					],
+					"path": [
+						"v1",
+						"charges",
+						"259143360666104576"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get transactions list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Private-Merchant-Id",
+						"value": "faa858fce2d94e3f8a6e33cddf55e8f2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-uat.kushkipagos.com/analytics/v1/transactions-list?from=2025-08-27T13%3A00%3A00&to=2025-08-27T13%3A20%3A00",
+					"protocol": "https",
+					"host": [
+						"api-uat",
+						"kushkipagos",
+						"com"
+					],
+					"path": [
+						"analytics",
+						"v1",
+						"transactions-list"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2025-08-27T13%3A00%3A00"
+						},
+						{
+							"key": "to",
+							"value": "2025-08-27T13%3A20%3A00"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
