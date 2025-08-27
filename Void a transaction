@@ -1,0 +1,11 @@
+// request
+
+curl --location --request DELETE 'https://api-uat.kushkipagos.com/v1/charges/259143360666104576' \
+--header 'Accept: application/json' \
+--header 'Private-Merchant-Id: faa858fce2d94e3f8a6e33cddf55e8f2'
+
+// Response
+{
+    "ticketNumber": "661756318872987462",
+    "transactionReference": "8ec51067-fe03-420f-b7d4-e3e67bccc8ed"
+}
